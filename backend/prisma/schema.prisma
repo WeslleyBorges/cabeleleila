@@ -33,7 +33,8 @@ model Profile {
 }
 
 model User {
-  id      Int      @id @default(autoincrement())
-  email   String   @unique
-  Profile Profile?
+  id       Int      @id @default(autoincrement())
+  email    String   @unique
+  Profile  Profile?
+  password String
 }
